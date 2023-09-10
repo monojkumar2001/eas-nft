@@ -1,0 +1,106 @@
+.address-nfts {
+  padding: 150px 0 100px 0;
+  background-image: url(../../public/images/addressnfts/metaverse.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.address-nfts .address-overlay{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #060617 0%, #060b179e 100%);
+  opacity: 0.8;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+    z-index: -1;
+}
+.address-nfts-wrapper .address-nft-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.address-nfts-wrapper .address-nft-content span{
+    font-size: 20px;
+}
+/* .address-nfts-wrapper .address-nft-content h2{
+    font-size: 64px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+} */
+.address-nfts-wrapper .address-nft-content p{
+    font-size: 20px;
+}
+.claim-your-address-btn{
+    width: fit-content;
+}
+.eas-address-nfts-list{
+    background-color: #1418206E;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+
+}
+.eas-address-nfts-list h4{
+    font-size: 20px;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.digital-address-nft{
+    background-color: var(--white-color);
+    color: var(--black-color)
+}
+.digital-address-nft-content .sub-title{
+    color: var(--main-color);
+    font-family: var(--primary-font);
+    font-size: 18px;
+}
+.digital-address-nft-content .address-title{
+    font-size: 60px;
+    font-family: var(--secondary-font);
+}
+.digital-address-nft-content .address-details{
+    padding-bottom: 10px;
+}
+.digital-address-nft-content .address-details span a{
+    color: var(--main-color);
+    font-weight:500;
+}
+.digital-makers-img{
+    width: 100%;
+}
+.digital-makers-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.digital-address-right-item{
+    text-align: center;
+}
+.nft-pricing-nft-link{
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:768px) {
+    .address-nfts-wrapper .address-nft-content p {
+        font-size: 17px;
+    }
+    .eas-address-nfts-list {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .digital-address-nft-content .address-title {
+        font-size: 40px;
+        font-family: var(--primary-font);
+    }
+}

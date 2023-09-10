@@ -1,0 +1,109 @@
+.footer{
+    padding: 100px 0 50px 0;
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #020015 0%, #141820 100%);
+}
+.footer-items-content{
+    gap: 20px;
+}
+.footer-items-content p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    line-height: 187%;
+}
+.footer-item-fluid .footer-link-item a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family:'BourtonLineBold';
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px 0;
+}
+.footer-item-fluid .footer-link-item a:hover{
+    color: var(--main-color);
+}
+.footer-email-fluid input{
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #3F414A;
+background: rgba(63, 65, 74, 0.44);
+padding: 10px 15px;
+width: 100%;
+color: var(--white-color);
+}
+.footer-email-fluid input::placeholder{
+    color: var(--white-color);
+}
+.footer-email-submit-btn button{
+    border-radius: 5px;
+background: rgba(63, 65, 74, 0.66);
+padding: 7px 20px;
+font-family:var(--secondary-font);
+color: var(--white-color);
+margin-top: 30px;
+border: none;
+text-align: center;
+}
+.footer-copy-right-wrapper{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.footer-copy-right-wrapper .footer-terms-policy {
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.footer-copy-right-wrapper .footer-terms-policy a{
+    color: var(--white-color);
+    transition: 0.4s;
+}
+.footer-copy-right-wrapper .footer-terms-policy a:hover{
+    color: var(--main-color);
+}
+.footer-copy-right-wrapper .copy-text{
+    color: #C5C2D0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-item-fluid-m{
+        display: none;
+    }
+    .footer-items-content{
+        margin-top: 0px;
+        text-align: center;
+    }
+    .footer-items-content .social-media-link{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer {
+        padding: 50px 0 50px 0;
+        background-color: transparent;
+        background-image: radial-gradient(at center center, #020015 0%, #141820 100%);
+    }
+    .footer-items-content .eas-nft-img img{
+        width: 40%;
+    }
+    .footer-copy-right-wrapper .footer-terms-policy a {
+        color: var(--white-color);
+        transition: 0.4s;
+        font-size: 16px;
+    }
+    .footer-copy-right-wrapper {
+        width: 100%;
+        text-align: center;   
+        margin-top: 0px !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-items-content .eas-nft-img img{
+        width: 35%;
+    }
+}

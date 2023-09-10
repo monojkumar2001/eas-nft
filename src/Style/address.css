@@ -1,0 +1,56 @@
+.googleaddress-input-fluid {
+  width: 500px;
+}
+.google-address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.googleaddress-input-fluid input {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+}
+.google-address-remove{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.remove button{
+  padding: 14px 20px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+}
+.remove svg {
+ font-size: 25px;
+}
+.claim-my-nft-item {
+  display: flex;
+  justify-content: center;
+}
+.google-map {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: justify;
+  align-items: start;
+  background: #fff;
+  color: #000;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.suggestion-address {
+  background: #fff;
+  border-radius: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  .google-address {
+    width: 100%;
+}
+  .googleaddress-input-fluid {
+    width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+.new-ticket-model, .overlay{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 11111;
+  }
+  .overlay{
+    backdrop-filter: blur(4px);
+    background: #06123754;
+  }
+  .new-ticket-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    z-index: 11112;
+  
+  }
+  /* .new-ticket-content iframe{
+    width: 150vh;
+    height: 80vh;
+
+  } */
+  .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: none;
+    background: var(--main-color);
+  }
+  .new-ticket-content-list p{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .new-ticket-content-list input{
+    background: #F6F7FB;
+  border-radius: 4px;
+  border: none;
+  width: 95%;
+  padding: 15px;
+  
+  }
+  .new-ticket-content-list .form-select{
+    background: #F6F7FB;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .new-ticket-content-list textarea{
+    width: 95%;
+    padding: 20px;
+    padding: 15px 15px;
+    border:none;
+    background: #F6F7FB;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .new-ticket-content-list p{
+    margin-bottom: 15px;
+  }
+  .new-ticket-content-list .new-ticket-btn{
+    background: #38C173;
+    padding: 15px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-weight: 600;
+    border-radius: 4px;
+  }
+  
+  .ticket-chatbox-con{
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+  }
+  .ticket-chatbox-con .msg-user-option{
+  padding: 20px;
+  }
+  .ticket-phone-container{
+    background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 14px 24px rgba(175, 175, 175, 0.12);
+  border-radius: 6px;
+  padding: 30px 0;
+  margin-top: 50px;
+  }
+  
+  .ticketPhoneList-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 15px 30px;
+  }
+  .ticketPhoneList-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }

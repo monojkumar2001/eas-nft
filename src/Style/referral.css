@@ -1,0 +1,143 @@
+/* =============================== Referral ========================= */
+.referral-container{
+    padding: 200px 0 100px 0;
+    background-color: var(--white-color);
+  }
+  .referral-title-name{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--black-color);
+    padding: 20px;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;
+    text-align: center;
+    font-family: var(--secondary-font);
+  }
+  .referral-link-item {
+    margin-top: 100px;
+    padding: 15px 40px;
+    border-radius: 6px;
+    border: 1px solid #a3a3a3;
+  }
+  .referral-link-item button{
+    border: none;
+    background: none;
+    cursor: pointer; 
+  }
+  .referral-link-item .referral-text{
+    color: var(--black-color);
+    font-weight: 700;
+    font-family: 20px;
+    font-family: var(--secondary-font);
+  }
+  .referral-link-item .copy-text{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .referral-history-item{
+    margin-top: 100px;
+    text-align: left;
+  
+  }
+  .referral-history-item h2{
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: #d4d3d3;
+    text-align: left;
+  }
+  .referral-history-item .underline{
+   margin: 20px 0;
+    border-bottom: 1px solid #b9b9b9;
+  }
+  .referral-history-item .referral-title{
+    font-size: 30px;
+    color: var(--black-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+  }
+  .referral-get-started-btn{
+    padding-top: 100px;
+    width: 100%
+  }
+  .card-btn-item{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+  }
+  input.referral-input {
+    padding: 10px 30px 15px 30px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    font-family: var(--secondary-font);
+  }
+  
+  button.referral-btn {
+    padding: 10px 30px 15px 30px;
+    border-radius: 5px;
+    border: none;
+    background: var(--main-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--secondary-font);
+    outline: none;
+    white-space: nowrap;
+  }
+  
+  .referral-copy-btn{
+    position: relative;
+  }
+  
+  .referrel-cope {
+    position: absolute;
+    top: 3px;
+    right: 40px;
+    color: var(--black-color);
+    white-space: nowrap;
+  }
+.referral-history-items{
+    height: 150px;
+    overflow-y:auto;
+}
+  .referral-text-item{
+    font-family: var(--secondary-font);
+    color: var(--black-color);
+    font-size: 18px;
+  }
+  @media screen and (max-width:768px){
+    .referral-container {
+        padding: 120px 0 70px 0;
+        background-color: var(--white-color);
+    }
+    .referral-title-name {
+        font-size: 40px;
+    }
+    .referral-link-item {
+        margin-top: 60px;
+    }
+    .card-btn-item {
+        flex-direction: column;
+        border: none;
+    }
+    .card-btn-item input.referral-input {
+       border:1px solid #a3a3a3;
+    }
+  }
+  @media screen and (max-width:576px){
+    .referral-link-item {
+        margin-top: 100px;
+        padding: 15px 20px;
+    }
+    .referral-title-name {
+        font-size: 30px;
+    }
+    .referrel-cope {
+        font-size: 12px;
+        right: 25px;
+    }
+    button.referral-btn{
+        width: 100%;
+    }
+  }

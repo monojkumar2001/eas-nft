@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nftconstructer.com/
+
+# Sitemaps
+Sitemap: https://nftconstructer.com/sitemap.xml
+Sitemap: https://nftconstructer.com/server-sitemap.xml

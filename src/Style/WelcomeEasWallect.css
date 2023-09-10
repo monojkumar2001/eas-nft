@@ -1,0 +1,63 @@
+.welcome_model, .overlay-4{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 11111111;
+  }
+ .overlay-4{
+    backdrop-filter: blur(4px);
+    background: #06123754;
+  }
+  .welcome-wallet-content{
+    background-color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    z-index: 11111111;
+    display: flex;
+    box-shadow: 0 10px 10px #757575;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .welcome-content-wrapper{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--black-color);
+  }
+  .welcome-content-wrapper h3{
+    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color:var(--black-color);
+  }
+  .welcome-content-wrapper .welcome-btn-items .cancel-btn{
+    background: rgb(238, 238, 238);
+    color: var(--black-color);
+  }
+  .welcome-content-wrapper .btn-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  @media screen and (max-width: 550px) {
+    .welcome-wallet-content{
+        width: 98%;
+      }
+      .welcome-content-wrapper .welcome-btn-items{
+        flex-direction: column;
+        width: 100%;
+      }
+      .welcome-content-wrapper .welcome-btn-items button{
+        width: 100%;
+      }
+  }

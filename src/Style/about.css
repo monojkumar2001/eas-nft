@@ -1,0 +1,130 @@
+.about-eas{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.about-eas-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.about-eas-content .section-title{
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+.about-eas-item{
+    background: var(--white-color);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 9px 11px 29px 0px rgba(125, 138.00000000000003, 152, 0.15);
+    transition: 0.4s;
+    height: 100%;
+    cursor: pointer;
+}
+.about-eas-item:hover{
+    transform: translateY(-10px);
+}
+.about-icon{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    background-color: #7040F214;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-description h4{
+    font-size: 20px;
+    font-family: var(--primary-font);
+    margin-bottom: 15px;
+}
+.video-icon-item{
+    font-size: 30px;
+}
+/* =================== EAS Owners Earn ================== */
+.eas-owners-earn{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.eas-owners-earn-left .section-title{
+    color: var(--black-color);
+}
+.eas-price-item h4{
+    font-size: 30px;
+    font-family: var(--primary-font);
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.eas-price-item p{
+    font-size: 18px;
+}
+.explore-btn .custom-btn{
+    width: fit-content;
+
+}
+.eas-owners-earn-right img{
+    width: 100%;
+}
+.eas-price-footer-item p{
+    font-family: var(--primary-font);
+    color: #7B92AD;
+    font-size: 14px;
+}
+
+.new-ticket-content iframe{
+    width: 1200px;
+    height: 675px;
+}
+/*  ====================responsive about page==================  */
+
+@media screen and (max-width: 1400px) {
+    .new-ticket-content iframe{
+        width: 1000px;
+        height: 563px;
+    }
+  }
+@media screen and (max-width: 1100px) {
+    .new-ticket-content iframe{
+        width: 700px;
+        height: 394px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .new-ticket-content iframe{
+        width: 500px;
+        height: 281px;
+    }
+    .eas-price-footer-item{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+  }
+@media screen and (max-width: 576px) {
+    .about-eas-content {
+        width: 100%;
+    }
+    .new-ticket-content iframe {
+        width: 341px;
+        height: 192px;
+    }
+    .about-description h4 {
+        font-size: 18px;
+    }
+    .focus-color {
+        letter-spacing: 0.1em;
+    }
+    .eas-price-footer-item {
+    margin-top: 20px !important;
+    }
+    .video-view-text {
+        font-size: 14px;
+    }
+  }
+
+

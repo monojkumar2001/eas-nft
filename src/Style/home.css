@@ -1,0 +1,576 @@
+.hero {
+  background-image: url(https://www.easnft.com/wp-content/uploads/2023/03/nft-metaverse-digital-city-banner-scaled.webp);
+  background-position: top right;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  /* height: 100vh; */
+  width: 100%;
+  padding: 150px 0;
+}
+.hero-bg-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #151515;
+  opacity: 0.5;
+  z-index: -1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero-wrapper .hero-title {
+  font-size: 70px;
+  font-family: var(--primary-font);
+  color: var(--white-color);
+}
+.hero-wrapper .hero-title span {
+  color: var(--main-color);
+}
+.address-input-fluid {
+  width: 50%;
+}
+.address-input-fluid input {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: none;
+}
+.hero-bg-hover {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ffffff00 0%, #04011c 100%);
+}
+.hero-map-img {
+  width: 130px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  animation: dance3 10s linear infinite alternate;
+  transition: all 0.5s;
+  --e-transform-flipX: -1;
+}
+.hero-map-img img {
+  width: 100%;
+}
+
+@keyframes dance3 {
+  0% {
+    transform: translate(0px, 0px) rotate(0);
+  }
+  20% {
+    transform: translate(0px, -10px) rotate(-5deg);
+  }
+  40% {
+    transform: translate(15px, -15px) rotate(0deg);
+  }
+  60% {
+    transform: translate(25px, 0px) rotate(7deg);
+  }
+  80% {
+    transform: translate(10px, 10px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+/* ===============  hero-card ============*/
+.hero-card .hero-card-items .hero-card-item {
+  position: relative;
+  cursor: pointer;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(1)::before {
+  content: "01";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  color: #000;
+  transition: 0.4s;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(2)::before {
+  content: "02";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  transition: 0.4s;
+  color: #000;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(3)::before {
+  content: "03";
+  font-size: 100px;
+  font-family: var(--primary-font);
+  -webkit-text-stroke: 3px #003576;
+  position: absolute;
+  top: -20px;
+  transition: 0.4s;
+  right: 50px;
+  color: #000;
+  z-index: -1;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(1):hover::before {
+  -webkit-text-stroke: 2px #003576;
+  color: #0087ff;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(2):hover::before {
+  -webkit-text-stroke: 2px #003576;
+  color: #0087ff;
+}
+.hero-card .hero-card-items .hero-card-item:nth-child(3):hover::before {
+  -webkit-text-stroke: 2px #003576;
+  color: #0087ff;
+}
+.hero-card-item h3 {
+  font-size: 26px;
+  font-family: var(--third-font);
+  margin-bottom: 15px;
+  font-weight:900;
+}
+.hero-card-itemss p {
+  color: #bdbad7;
+}
+.hero-card-footer-text span {
+  font-size: 20px;
+  font-family: var(--third-font);
+
+}
+.hero-card-item .hero-discs {
+  color:#BDBAD7;
+}
+.hero-card-footer-text {
+  padding-bottom: 70px;
+  /* border-bottom: 1px solid var(--main-color); */
+  border-bottom: 1px solid #003576;
+  width: 75%;
+  margin: auto;
+}
+
+/* ============ About Us ============= */
+.about_us_left_site .learn-more-btn {
+  width: fit-content;
+}
+.about_us_left_site p {
+  font-size: 18px;
+  color: #BDBAD7;
+}
+.about_us_wrapper .about_us_right_sites {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.about-1-img {
+ top:  20%;
+  left: 10%;
+  z-index: 1;
+  position: absolute;
+}
+.about-1-img img {
+  width: 65%;
+}
+.about-2-img img {
+  width: 65%;
+  margin: auto;
+  object-fit: cover;
+}
+.about-2-img {
+  top:10%;
+  right: -15%;
+  z-index: 2;
+  position: absolute;
+}
+.about-3-img{
+  display: none;
+}
+/* ==================== NFT Collection ===========  */
+.nft-collections {
+  background-image: url(../../public/images/home/nft-collection-img.svg);
+  background-position: 400px 10px;
+  background-repeat: no-repeat;
+  background-size: 1400px auto;
+  padding-bottom: 150px;
+}
+.nft-collections-item {
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #4690d430 50%, #4690d400 100%);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffffff1a;
+  transition: 0.5s;
+  height: 100%;
+  cursor: pointer;
+}
+.nft-collections-item:hover {
+  transform: translateY(-10px);
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #0080f830 50%, #4690d400 100%);
+}
+.nft-collection-learn-more-btn {
+  font-family: var(--primary-font);
+  color: var(--main-color);
+}
+.nft-collections-item .nft-collection-icon span {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.nft-collection-item-content h4{
+  font-family: var(--primary-font);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+/* =====================  NFT USE CASES ==================== */
+.focus-color-2 a {
+  color: var(--main-color);
+}
+.use-cases-right-item {
+  margin: 0px 0px 0px 0px;
+  background-image: url(../../public/images/home/use-case.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.use-cases-right-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 484px;
+  height: 484px;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+}
+
+#circle-btn-1 {
+  top: 2%;
+  left: 2%;
+  position: absolute;
+}
+#circle-btn-2 {
+  top: 2%;
+  right: 2%;
+  position: absolute;
+}
+#circle-btn-3 {
+  bottom: 2%;
+  left: 2%;
+  position: absolute;
+}
+#circle-btn-4 {
+  bottom: 2%;
+  right: 2%;
+  position: absolute;
+}
+.use-case-circle-btn .circle-btn-content p {
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  line-height: 18px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.use-case-circle-btn {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: var(--white-color);
+  background-color: #160e2c;
+  cursor: pointer;
+  transition: 0.5s;
+  border:4px solid #fff;
+}
+.use-case-circle-btn.active {
+  background-color: #fff;
+  color: var(--black-color);
+}
+.use-case-circle-btn-content {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.use-case-circle-btn-content h4 {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  margin-bottom: 10px;
+}
+.active-use-case-circle-btn-content {
+  display: block;
+}
+.use-cases-item-list ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin: 5px;
+}
+.use-cases-item-list ul li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+.learn-more-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.about-use-cases-btn {
+  width: fit-content;
+  padding: 15px 35px 20px 35px;
+}
+/* ========================= FAQ QUESTION  ================== */
+.faq-row-wrapper {
+  background-color: var(--faq-bg-color, none) !important;
+}
+.faq-row {
+  margin-bottom: 30px;
+  border-bottom: none !important;
+  border-radius: 6px;
+  padding: 5px 20px 10px 20px !important;
+  background-color: #141820;
+  transition: 0.4s;
+}
+.faq-row:hover {
+  background-color: var(--main-color);
+}
+.styles_faq-row-wrapper__3vA1D
+  .styles_row-body__1NvUo
+  .styles_faq-row__2YF3c
+  .styles_row-title__1YiiY
+  .styles_icon-wrapper__2cftw
+  svg {
+  fill: white !important;
+}
+.row-title-text {
+  color: var(--white-color);
+  position: relative;
+  margin: 0;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+}
+.row-content-text a {
+  color: #0d6efd;
+}
+.styles_faq-row-wrapper__3vA1D
+  .styles_row-body__1NvUo
+  .styles_faq-row__2YF3c
+  .styles_row-content__QOGZd
+  .styles_row-content-text__2sgAB {
+  color: var(--row-content-color, white) !important;
+}
+.faq-question-img {
+  position: relative;
+  animation: dance2 6s linear infinite alternate;
+}
+@keyframes dance2 {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.faq-question-img img {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.faq-still-question p {
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+.faq-still-question p a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+/* ======================== EAS AFFILIATE ================== */
+.eas-affiliate-img img {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+/* ==================== Responsive ============== */
+@media screen and (max-width: 1300px) {
+  .about_us_wrapper .about_us_right_sites .about-3-img{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.about_us_wrapper .about_us_right_sites .about-3-img img{
+  width: 80%;
+}
+.about-1-img {
+display: none;
+}
+.about-2-img {
+display: none;
+}
+.nft-collections {
+  background-position: 103px 186px;
+  background-repeat: no-repeat;
+  background-size: 1400px auto;
+  padding-bottom: 150px;
+}
+}
+@media screen and (max-width: 992px) {
+  .hero-card .hero-card-items .hero-card-item {
+    margin-bottom: 52px;
+}
+.faq-question-img {
+  margin-top: 50px;
+}
+}
+@media screen and (max-width: 768px) {
+  .hero-wrapper .hero-title {
+      font-size: 50px;
+  }
+  .address-input-fluid {
+    width: 100%;
+}
+.hero-map-img {
+display: none;
+}
+.hero {
+  padding: 100px 0;
+}
+.hero-card-footer-text {
+  width: 100%;
+  margin: auto;
+}
+.nft-collections {
+  background-position: -203px 186px;
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  padding-bottom: 150px;
+}
+.row-title-text {
+  font-size: 18px;
+}
+.eas-affiliate-img {
+  margin-top: 40px;
+}
+}
+@media screen and (max-width: 576px) {
+  .hero-wrapper .hero-title {
+      font-size: 35px;
+  }
+  .about_us_wrapper .about_us_right_sites .about-3-img{
+    margin-top: 50px;
+}
+.nft-collections {
+  background-position: -203px 500px;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+  padding-bottom: 150px;
+}
+
+.use-cases-right-item-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border: none;
+  width: 100%;
+  height:100%;
+}
+
+.use-case-circle-item {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+  border: 2px solid #f5f3ff;
+}
+#circle-btn-1 {
+  position: inherit;
+}
+#circle-btn-2 {
+  position: inherit;
+}
+#circle-btn-3 {
+  position: inherit;
+}
+.use-case-circle-btn-content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+#circle-btn-4 {
+  /* bottom: 2%; */
+  /* right: 2%; */
+  position: inherit;
+}
+}

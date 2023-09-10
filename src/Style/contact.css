@@ -1,0 +1,79 @@
+.contact{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    position: relative;
+}
+
+.contact .contact-wrapper .content-eas-nft-wrapper{
+        box-shadow: 9px 10px 29px 0px rgba(125, 138.00000000000003, 152, 0.15);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 34px 50px 50px 50px;
+    margin-bottom: 20px;
+}
+.contact-footer-img{
+    background-color: var(--white-color);
+    background-image: url(../../public/images/contact/skyline-gradient.png);
+    background-position: bottom center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+}
+.contact-left .section-title{
+    color: var(--black-color);
+}
+.social-media-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--white-color);
+    box-shadow: 5px 5px 5px #a8a8a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-social-media-item {
+    margin: 15px 0;
+}
+.contact-social-media-item:hover .social-media-icon{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transform: scale(0.95);
+}
+.social-item-content h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.social-item-content span a{
+color: var(--black-color);
+font-size: 17px;
+}
+.social-item-content span a:hover{
+    color: var(--main-color);
+}
+.social-item-content .social-contact-list a{    
+    color: var(--main-color);
+}
+.opensea-imgs{
+    width: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+}
+.opensea-imgs img{
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+    .input-fulname-fluid-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact .contact-wrapper .content-eas-nft-wrapper {
+        padding: 34px 20px 40px 20px;
+        margin-bottom: 20px;
+    }
+}
